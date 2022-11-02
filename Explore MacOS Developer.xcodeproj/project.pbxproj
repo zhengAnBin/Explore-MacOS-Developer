@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		22A178E529125638009F9B2B /* Explore MacOS Developer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Explore MacOS Developer"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22A178E829125638009F9B2B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		22A178EF29125A5E009F9B2B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +42,8 @@
 		22A178DC29125638009F9B2B = {
 			isa = PBXGroup;
 			children = (
-				22A178E729125638009F9B2B /* Explore MacOS Developer */,
+				22A178EF29125A5E009F9B2B /* README.md */,
+				22A178E729125638009F9B2B /* 打开一个简单的窗口 */,
 				22A178E629125638009F9B2B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,12 +56,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		22A178E729125638009F9B2B /* Explore MacOS Developer */ = {
+		22A178E729125638009F9B2B /* 打开一个简单的窗口 */ = {
 			isa = PBXGroup;
 			children = (
 				22A178E829125638009F9B2B /* main.m */,
 			);
-			path = "Explore MacOS Developer";
+			path = "打开一个简单的窗口";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
