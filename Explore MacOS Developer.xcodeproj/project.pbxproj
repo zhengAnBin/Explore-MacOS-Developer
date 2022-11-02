@@ -8,10 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		22A178E929125638009F9B2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A178E829125638009F9B2B /* main.m */; };
+		22A178F729126A32009F9B2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A178F629126A32009F9B2B /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		22A178E329125638009F9B2B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		22A178F229126A32009F9B2B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -26,10 +36,19 @@
 		22A178E529125638009F9B2B /* Explore MacOS Developer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Explore MacOS Developer"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22A178E829125638009F9B2B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		22A178EF29125A5E009F9B2B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		22A178F429126A32009F9B2B /* 一个简单的webview应用 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "一个简单的webview应用"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22A178F629126A32009F9B2B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		22A178E229125638009F9B2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22A178F129126A32009F9B2B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,6 +63,7 @@
 			children = (
 				22A178EF29125A5E009F9B2B /* README.md */,
 				22A178E729125638009F9B2B /* 打开一个简单的窗口 */,
+				22A178F529126A32009F9B2B /* 一个简单的webview应用 */,
 				22A178E629125638009F9B2B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				22A178E529125638009F9B2B /* Explore MacOS Developer */,
+				22A178F429126A32009F9B2B /* 一个简单的webview应用 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +83,14 @@
 				22A178E829125638009F9B2B /* main.m */,
 			);
 			path = "打开一个简单的窗口";
+			sourceTree = "<group>";
+		};
+		22A178F529126A32009F9B2B /* 一个简单的webview应用 */ = {
+			isa = PBXGroup;
+			children = (
+				22A178F629126A32009F9B2B /* main.m */,
+			);
+			path = "一个简单的webview应用";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +113,23 @@
 			productReference = 22A178E529125638009F9B2B /* Explore MacOS Developer */;
 			productType = "com.apple.product-type.tool";
 		};
+		22A178F329126A32009F9B2B /* 一个简单的webview应用 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22A178F829126A32009F9B2B /* Build configuration list for PBXNativeTarget "一个简单的webview应用" */;
+			buildPhases = (
+				22A178F029126A32009F9B2B /* Sources */,
+				22A178F129126A32009F9B2B /* Frameworks */,
+				22A178F229126A32009F9B2B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "一个简单的webview应用";
+			productName = "一个简单的webview应用";
+			productReference = 22A178F429126A32009F9B2B /* 一个简单的webview应用 */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -94,6 +140,9 @@
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					22A178E429125638009F9B2B = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					22A178F329126A32009F9B2B = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
 				};
@@ -112,6 +161,7 @@
 			projectRoot = "";
 			targets = (
 				22A178E429125638009F9B2B /* Explore MacOS Developer */,
+				22A178F329126A32009F9B2B /* 一个简单的webview应用 */,
 			);
 		};
 /* End PBXProject section */
@@ -122,6 +172,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				22A178E929125638009F9B2B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22A178F029126A32009F9B2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22A178F729126A32009F9B2B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +311,22 @@
 			};
 			name = Release;
 		};
+		22A178F929126A32009F9B2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		22A178FA29126A32009F9B2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -270,6 +344,15 @@
 			buildConfigurations = (
 				22A178ED29125638009F9B2B /* Debug */,
 				22A178EE29125638009F9B2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22A178F829126A32009F9B2B /* Build configuration list for PBXNativeTarget "一个简单的webview应用" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22A178F929126A32009F9B2B /* Debug */,
+				22A178FA29126A32009F9B2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
