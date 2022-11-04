@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		22A178E929125638009F9B2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A178E829125638009F9B2B /* main.m */; };
 		22A178F729126A32009F9B2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A178F629126A32009F9B2B /* main.m */; };
+		22A179022913641F009F9B2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A179012913641F009F9B2B /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +31,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		22A178FD2913641F009F9B2B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +48,9 @@
 		22A178EF29125A5E009F9B2B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		22A178F429126A32009F9B2B /* 一个简单的webview应用 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "一个简单的webview应用"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22A178F629126A32009F9B2B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		22A178FF2913641F009F9B2B /* 一个简单的状态栏软件 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "一个简单的状态栏软件"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22A179012913641F009F9B2B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		22A1790629138F80009F9B2B /* info.plist */ = {isa = PBXFileReference; explicitFileType = text.plist.info; path = info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +68,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		22A178FC2913641F009F9B2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -64,6 +84,7 @@
 				22A178EF29125A5E009F9B2B /* README.md */,
 				22A178E729125638009F9B2B /* 打开一个简单的窗口 */,
 				22A178F529126A32009F9B2B /* 一个简单的webview应用 */,
+				22A179002913641F009F9B2B /* 一个简单的状态栏软件 */,
 				22A178E629125638009F9B2B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,6 +94,7 @@
 			children = (
 				22A178E529125638009F9B2B /* Explore MacOS Developer */,
 				22A178F429126A32009F9B2B /* 一个简单的webview应用 */,
+				22A178FF2913641F009F9B2B /* 一个简单的状态栏软件 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,6 +113,15 @@
 				22A178F629126A32009F9B2B /* main.m */,
 			);
 			path = "一个简单的webview应用";
+			sourceTree = "<group>";
+		};
+		22A179002913641F009F9B2B /* 一个简单的状态栏软件 */ = {
+			isa = PBXGroup;
+			children = (
+				22A179012913641F009F9B2B /* main.m */,
+				22A1790629138F80009F9B2B /* info.plist */,
+			);
+			path = "一个简单的状态栏软件";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +161,23 @@
 			productReference = 22A178F429126A32009F9B2B /* 一个简单的webview应用 */;
 			productType = "com.apple.product-type.tool";
 		};
+		22A178FE2913641F009F9B2B /* 一个简单的状态栏软件 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22A179052913641F009F9B2B /* Build configuration list for PBXNativeTarget "一个简单的状态栏软件" */;
+			buildPhases = (
+				22A178FB2913641F009F9B2B /* Sources */,
+				22A178FC2913641F009F9B2B /* Frameworks */,
+				22A178FD2913641F009F9B2B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "一个简单的状态栏软件";
+			productName = "一个简单的状态栏软件";
+			productReference = 22A178FF2913641F009F9B2B /* 一个简单的状态栏软件 */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -143,6 +191,9 @@
 						CreatedOnToolsVersion = 14.0.1;
 					};
 					22A178F329126A32009F9B2B = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					22A178FE2913641F009F9B2B = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
 				};
@@ -162,6 +213,7 @@
 			targets = (
 				22A178E429125638009F9B2B /* Explore MacOS Developer */,
 				22A178F329126A32009F9B2B /* 一个简单的webview应用 */,
+				22A178FE2913641F009F9B2B /* 一个简单的状态栏软件 */,
 			);
 		};
 /* End PBXProject section */
@@ -180,6 +232,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				22A178F729126A32009F9B2B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22A178FB2913641F009F9B2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22A179022913641F009F9B2B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +359,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/一个简单的状态栏软件/info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -307,6 +369,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/一个简单的状态栏软件/info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -323,6 +387,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		22A179032913641F009F9B2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/一个简单的状态栏软件/info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		22A179042913641F009F9B2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/一个简单的状态栏软件/info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -353,6 +435,15 @@
 			buildConfigurations = (
 				22A178F929126A32009F9B2B /* Debug */,
 				22A178FA29126A32009F9B2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22A179052913641F009F9B2B /* Build configuration list for PBXNativeTarget "一个简单的状态栏软件" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22A179032913641F009F9B2B /* Debug */,
+				22A179042913641F009F9B2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
