@@ -7,12 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2228C2802915124E005394B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2228C27F2915124E005394B2 /* main.m */; };
 		22A178E929125638009F9B2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A178E829125638009F9B2B /* main.m */; };
 		22A178F729126A32009F9B2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A178F629126A32009F9B2B /* main.m */; };
 		22A179022913641F009F9B2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A179012913641F009F9B2B /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		2228C27B2915124E005394B2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		22A178E329125638009F9B2B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -43,6 +53,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2228C27D2915124E005394B2 /* 使用NSPopover来显示状态栏应用的内部状态 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "使用NSPopover来显示状态栏应用的内部状态"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2228C27F2915124E005394B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		22A178E529125638009F9B2B /* Explore MacOS Developer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Explore MacOS Developer"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22A178E829125638009F9B2B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		22A178EF29125A5E009F9B2B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -54,6 +66,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2228C27A2915124E005394B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		22A178E229125638009F9B2B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -78,6 +97,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2228C27E2915124E005394B2 /* 使用NSPopover来显示状态栏应用的内部状态 */ = {
+			isa = PBXGroup;
+			children = (
+				2228C27F2915124E005394B2 /* main.m */,
+			);
+			path = "使用NSPopover来显示状态栏应用的内部状态";
+			sourceTree = "<group>";
+		};
 		22A178DC29125638009F9B2B = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +112,7 @@
 				22A178E729125638009F9B2B /* 打开一个简单的窗口 */,
 				22A178F529126A32009F9B2B /* 一个简单的webview应用 */,
 				22A179002913641F009F9B2B /* 一个简单的状态栏软件 */,
+				2228C27E2915124E005394B2 /* 使用NSPopover来显示状态栏应用的内部状态 */,
 				22A178E629125638009F9B2B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,6 +123,7 @@
 				22A178E529125638009F9B2B /* Explore MacOS Developer */,
 				22A178F429126A32009F9B2B /* 一个简单的webview应用 */,
 				22A178FF2913641F009F9B2B /* 一个简单的状态栏软件 */,
+				2228C27D2915124E005394B2 /* 使用NSPopover来显示状态栏应用的内部状态 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,6 +156,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2228C27C2915124E005394B2 /* 使用NSPopover来显示状态栏应用的内部状态 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2228C2832915124E005394B2 /* Build configuration list for PBXNativeTarget "使用NSPopover来显示状态栏应用的内部状态" */;
+			buildPhases = (
+				2228C2792915124E005394B2 /* Sources */,
+				2228C27A2915124E005394B2 /* Frameworks */,
+				2228C27B2915124E005394B2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "使用NSPopover来显示状态栏应用的内部状态";
+			productName = "使用NSPopover来显示状态栏应用的内部状态";
+			productReference = 2228C27D2915124E005394B2 /* 使用NSPopover来显示状态栏应用的内部状态 */;
+			productType = "com.apple.product-type.tool";
+		};
 		22A178E429125638009F9B2B /* Explore MacOS Developer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22A178EC29125638009F9B2B /* Build configuration list for PBXNativeTarget "Explore MacOS Developer" */;
@@ -187,6 +233,9 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					2228C27C2915124E005394B2 = {
+						CreatedOnToolsVersion = 14.1;
+					};
 					22A178E429125638009F9B2B = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
@@ -214,11 +263,20 @@
 				22A178E429125638009F9B2B /* Explore MacOS Developer */,
 				22A178F329126A32009F9B2B /* 一个简单的webview应用 */,
 				22A178FE2913641F009F9B2B /* 一个简单的状态栏软件 */,
+				2228C27C2915124E005394B2 /* 使用NSPopover来显示状态栏应用的内部状态 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2228C2792915124E005394B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2228C2802915124E005394B2 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		22A178E129125638009F9B2B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -246,6 +304,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		2228C2812915124E005394B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2228C2822915124E005394B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		22A178EA29125638009F9B2B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -412,6 +488,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2228C2832915124E005394B2 /* Build configuration list for PBXNativeTarget "使用NSPopover来显示状态栏应用的内部状态" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2228C2812915124E005394B2 /* Debug */,
+				2228C2822915124E005394B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		22A178E029125638009F9B2B /* Build configuration list for PBXProject "Explore MacOS Developer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
