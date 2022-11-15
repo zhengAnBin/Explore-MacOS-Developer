@@ -22,6 +22,7 @@
 @property (nonatomic, strong) NSPopover *popover;
 @property (nonatomic, strong) NSStatusItem *statusItem;
 @property (nonatomic, strong) NSViewController *viewController;
+@property (nonatomic, strong) NSEvent *event;
 @end
 
 
@@ -43,6 +44,15 @@
     [statusItem.button setTarget:self];
     [statusItem.button setAction:@selector(onClickForStatusItem:)];
     
+    self.event = [NSEvent addGlobalMonitorForEventsMatchingMask:(NSLeftMouseDownMask | NSRightMouseDownMask | NSKeyUpMask) handler:^(NSEvent* event) {
+        if (_popover.shown == YES) {
+            NSLog(@"关闭popover");
+            [_popover close];
+        } else {
+            NSLog(@"popover已经关闭");
+        }
+    }];
+    
     NSRunningApplication *current_app = [NSRunningApplication currentApplication];
     [current_app activateWithOptions:NSApplicationActivateIgnoringOtherApps];
     
@@ -59,6 +69,8 @@
     self.viewController = controller;
     controller.view = [[NSView alloc] init];
     popover.contentViewController = controller;
+    // 点击其他控件时就会关闭NSPopover
+    [popover setBehavior:NSPopoverBehaviorTransient];
     [popover setAnimates:YES];
     [popover showRelativeToRect:statusRect ofView:btn preferredEdge:NSRectEdgeMaxY];
     
