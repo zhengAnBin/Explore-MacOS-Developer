@@ -18,17 +18,26 @@ int main(int argc, const char * argv[]) {
     NSApplication *app = [NSApplication sharedApplication];
     [app setActivationPolicy:NSApplicationActivationPolicyRegular];
     
+    // 窗口大小
     NSRect rect = CGRectMake(0., 0., 600, 350);
     
-    // 创建webview
-    WKWebViewConfiguration *configuration = [[WKWebViewConfiguration alloc] init];
+    // 创建时的一些参数
     WKUserContentController *userConfiguration = [[WKUserContentController alloc] init];
+    WKWebViewConfiguration *configuration = [[WKWebViewConfiguration alloc] init];
     [configuration setUserContentController:userConfiguration];
+    
+    // 创建webview
     WKWebView *webview = [[WKWebView alloc] initWithFrame:rect configuration:configuration];
     [webview setAutoresizingMask:NSViewWidthSizable];
     
     // 加载html
-    [webview loadHTMLString:@"<h1>Hello WKWebView! This is H1 Tag</h1>" baseURL:nil];
+//    [webview loadHTMLString:@"<h1>Hello WKWebView! This is H1 Tag</h1>" baseURL:nil];
+    
+    NSURL *url = [NSURL URLWithString:@"https://www.baidu.com"];
+    // 根据URL创建请求
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    // WKWebView加载请求
+    [webview loadRequest:request];
     
     // 创建窗口
     NSWindow *window = [[NSWindow alloc] initWithContentRect:rect styleMask:NSWindowStyleMaskTitled backing:NSBackingStoreBuffered defer:true];

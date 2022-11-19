@@ -44,10 +44,10 @@
     [statusItem.button setTarget:self];
     [statusItem.button setAction:@selector(onClickForStatusItem:)];
     
-    self.event = [NSEvent addGlobalMonitorForEventsMatchingMask:(NSLeftMouseDownMask | NSRightMouseDownMask | NSKeyUpMask) handler:^(NSEvent* event) {
-        if (_popover.shown == YES) {
+    self.event = [NSEvent addGlobalMonitorForEventsMatchingMask:(NSEventMaskLeftMouseDown | NSEventMaskRightMouseDown | NSEventMaskKeyUp) handler:^(NSEvent* event) {
+        if (self->_popover.shown == YES) {
             NSLog(@"关闭popover");
-            [_popover close];
+            [self->_popover close];
         } else {
             NSLog(@"popover已经关闭");
         }

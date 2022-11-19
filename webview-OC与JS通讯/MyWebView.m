@@ -17,11 +17,7 @@
   
     WKUserContentController *userConfiguration = [[WKUserContentController alloc] init];
     [userConfiguration addScriptMessageHandler:self name:@"handler_oc"];
-    
-//    // 注入js脚本
-//    WKUserScript *userScript = [[WKUserScript alloc] initWithSource:@"function a() { return document.body.innerHtml = '<h1>改变</h1>' };" injectionTime:WKUserScriptInjectionTimeAtDocumentEnd forMainFrameOnly:YES];
-//    [userConfiguration addUserScript:userScript];
-    
+        
     WKWebViewConfiguration *configuration = [[WKWebViewConfiguration alloc] init];
     [configuration setUserContentController:userConfiguration];
     
@@ -43,14 +39,13 @@
     [webview loadHTMLString:@"<button onClick='clickButton()' id='btn'>点击按钮</button> \
      <script> \
         function clickButton() { \
-     document.getElementById('btn').textContent = 2; \
-         const btn = document.getElementById('btn'); \
-                      window.webkit.messageHandlers.handler_oc.postMessage({ \
-                         name: 'handler_oc', \
-                          type: 'click', \
-                          data: '123456789' \
-                      }); \
-     }\
+            const btn = document.getElementById('btn'); \
+            window.webkit.messageHandlers.handler_oc.postMessage({ \
+                name: 'handler_oc', \
+                type: 'click', \
+                data: '123456789' \
+            }); \
+        }\
      </script>" baseURL:nil];
     
     // 创建窗口
