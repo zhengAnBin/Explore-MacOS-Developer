@@ -36,10 +36,9 @@
 //        }
 //    }];
     
-    [webview loadHTMLString:@"<button onClick='clickButton()' id='btn'>点击按钮</button> \
+    [webview loadHTMLString:@"<button onClick='clickButton()'>点击按钮</button> \
      <script> \
         function clickButton() { \
-            const btn = document.getElementById('btn'); \
             window.webkit.messageHandlers.handler_oc.postMessage({ \
                 name: 'handler_oc', \
                 type: 'click', \

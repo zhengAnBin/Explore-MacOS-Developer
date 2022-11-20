@@ -10,6 +10,7 @@
 		2228C2802915124E005394B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2228C27F2915124E005394B2 /* main.m */; };
 		228D454B292482B9005ED0D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 228D454A292482B9005ED0D3 /* main.m */; };
 		228D455429277684005ED0D3 /* MyWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 228D455329277684005ED0D3 /* MyWebView.m */; };
+		228D455C2929B840005ED0D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 228D455B2929B840005ED0D3 /* main.m */; };
 		22A178E929125638009F9B2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A178E829125638009F9B2B /* main.m */; };
 		22A178F729126A32009F9B2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A178F629126A32009F9B2B /* main.m */; };
 		22A179022913641F009F9B2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A179012913641F009F9B2B /* main.m */; };
@@ -26,6 +27,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		228D4546292482B9005ED0D3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		228D45572929B840005ED0D3 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -70,6 +80,8 @@
 		228D454A292482B9005ED0D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		228D455229277684005ED0D3 /* MyWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyWebView.h; sourceTree = "<group>"; };
 		228D455329277684005ED0D3 /* MyWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyWebView.m; sourceTree = "<group>"; };
+		228D45592929B840005ED0D3 /* 设置App的delegate */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "设置App的delegate"; sourceTree = BUILT_PRODUCTS_DIR; };
+		228D455B2929B840005ED0D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		22A178E529125638009F9B2B /* Explore MacOS Developer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Explore MacOS Developer"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22A178E829125638009F9B2B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		22A178EF29125A5E009F9B2B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -89,6 +101,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		228D4545292482B9005ED0D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		228D45562929B840005ED0D3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -137,6 +156,14 @@
 			path = "webview-OC与JS通讯";
 			sourceTree = "<group>";
 		};
+		228D455A2929B840005ED0D3 /* 设置App的delegate */ = {
+			isa = PBXGroup;
+			children = (
+				228D455B2929B840005ED0D3 /* main.m */,
+			);
+			path = "设置App的delegate";
+			sourceTree = "<group>";
+		};
 		22A178DC29125638009F9B2B = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +173,7 @@
 				22A179002913641F009F9B2B /* 一个简单的状态栏软件 */,
 				2228C27E2915124E005394B2 /* 使用NSPopover来显示状态栏应用的内部状态 */,
 				228D4549292482B9005ED0D3 /* webview-OC与JS通讯 */,
+				228D455A2929B840005ED0D3 /* 设置App的delegate */,
 				22A178E629125638009F9B2B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -158,6 +186,7 @@
 				22A178FF2913641F009F9B2B /* 一个简单的状态栏软件 */,
 				2228C27D2915124E005394B2 /* 使用NSPopover来显示状态栏应用的内部状态 */,
 				228D4548292482B9005ED0D3 /* webview-OC与JS通讯 */,
+				228D45592929B840005ED0D3 /* 设置App的delegate */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -222,6 +251,23 @@
 			name = "webview-OC与JS通讯";
 			productName = "webview-OC与JS通讯";
 			productReference = 228D4548292482B9005ED0D3 /* webview-OC与JS通讯 */;
+			productType = "com.apple.product-type.tool";
+		};
+		228D45582929B840005ED0D3 /* 设置App的delegate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 228D455F2929B840005ED0D3 /* Build configuration list for PBXNativeTarget "设置App的delegate" */;
+			buildPhases = (
+				228D45552929B840005ED0D3 /* Sources */,
+				228D45562929B840005ED0D3 /* Frameworks */,
+				228D45572929B840005ED0D3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "设置App的delegate";
+			productName = "设置App的delegate";
+			productReference = 228D45592929B840005ED0D3 /* 设置App的delegate */;
 			productType = "com.apple.product-type.tool";
 		};
 		22A178E429125638009F9B2B /* Explore MacOS Developer */ = {
@@ -290,6 +336,9 @@
 					228D4547292482B9005ED0D3 = {
 						CreatedOnToolsVersion = 14.1;
 					};
+					228D45582929B840005ED0D3 = {
+						CreatedOnToolsVersion = 14.1;
+					};
 					22A178E429125638009F9B2B = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
@@ -319,6 +368,7 @@
 				22A178FE2913641F009F9B2B /* 一个简单的状态栏软件 */,
 				2228C27C2915124E005394B2 /* 使用NSPopover来显示状态栏应用的内部状态 */,
 				228D4547292482B9005ED0D3 /* webview-OC与JS通讯 */,
+				228D45582929B840005ED0D3 /* 设置App的delegate */,
 			);
 		};
 /* End PBXProject section */
@@ -338,6 +388,14 @@
 			files = (
 				228D454B292482B9005ED0D3 /* main.m in Sources */,
 				228D455429277684005ED0D3 /* MyWebView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		228D45552929B840005ED0D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				228D455C2929B840005ED0D3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +454,24 @@
 			name = Debug;
 		};
 		228D454D292482B9005ED0D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		228D455D2929B840005ED0D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		228D455E2929B840005ED0D3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -584,6 +660,15 @@
 			buildConfigurations = (
 				228D454C292482B9005ED0D3 /* Debug */,
 				228D454D292482B9005ED0D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		228D455F2929B840005ED0D3 /* Build configuration list for PBXNativeTarget "设置App的delegate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				228D455D2929B840005ED0D3 /* Debug */,
+				228D455E2929B840005ED0D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
