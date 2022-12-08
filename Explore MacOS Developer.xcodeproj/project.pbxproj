@@ -12,6 +12,7 @@
 		228D455429277684005ED0D3 /* MyWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 228D455329277684005ED0D3 /* MyWebView.m */; };
 		228D455C2929B840005ED0D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 228D455B2929B840005ED0D3 /* main.m */; };
 		229FBA4C293F2A3A00FA0858 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 229FBA4B293F2A3A00FA0858 /* main.m */; };
+		229FBA572941E68100FA0858 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 229FBA562941E68100FA0858 /* main.m */; };
 		22A178E929125638009F9B2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A178E829125638009F9B2B /* main.m */; };
 		22A178F729126A32009F9B2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A178F629126A32009F9B2B /* main.m */; };
 		22A179022913641F009F9B2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A179012913641F009F9B2B /* main.m */; };
@@ -46,6 +47,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		229FBA47293F2A3A00FA0858 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		229FBA522941E68100FA0858 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -94,6 +104,8 @@
 		228D455B2929B840005ED0D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		229FBA49293F2A3A00FA0858 /* 打开webview的Inspect */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "打开webview的Inspect"; sourceTree = BUILT_PRODUCTS_DIR; };
 		229FBA4B293F2A3A00FA0858 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		229FBA542941E68100FA0858 /* objective-c runtime */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "objective-c runtime"; sourceTree = BUILT_PRODUCTS_DIR; };
+		229FBA562941E68100FA0858 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		22A178E529125638009F9B2B /* Explore MacOS Developer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Explore MacOS Developer"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22A178E829125638009F9B2B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		22A178EF29125A5E009F9B2B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -126,6 +138,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		229FBA46293F2A3A00FA0858 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		229FBA512941E68100FA0858 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -190,6 +209,14 @@
 			path = "打开webview的Inspect";
 			sourceTree = "<group>";
 		};
+		229FBA552941E68100FA0858 /* objective-c runtime */ = {
+			isa = PBXGroup;
+			children = (
+				229FBA562941E68100FA0858 /* main.m */,
+			);
+			path = "objective-c runtime";
+			sourceTree = "<group>";
+		};
 		22A178DC29125638009F9B2B = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +228,7 @@
 				228D4549292482B9005ED0D3 /* webview-OC与JS通讯 */,
 				228D455A2929B840005ED0D3 /* 设置App的delegate */,
 				229FBA4A293F2A3A00FA0858 /* 打开webview的Inspect */,
+				229FBA552941E68100FA0858 /* objective-c runtime */,
 				22A178E629125638009F9B2B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -215,6 +243,7 @@
 				228D4548292482B9005ED0D3 /* webview-OC与JS通讯 */,
 				228D45592929B840005ED0D3 /* 设置App的delegate */,
 				229FBA49293F2A3A00FA0858 /* 打开webview的Inspect */,
+				229FBA542941E68100FA0858 /* objective-c runtime */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -314,6 +343,23 @@
 			productReference = 229FBA49293F2A3A00FA0858 /* 打开webview的Inspect */;
 			productType = "com.apple.product-type.tool";
 		};
+		229FBA532941E68100FA0858 /* objective-c runtime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 229FBA5A2941E68100FA0858 /* Build configuration list for PBXNativeTarget "objective-c runtime" */;
+			buildPhases = (
+				229FBA502941E68100FA0858 /* Sources */,
+				229FBA512941E68100FA0858 /* Frameworks */,
+				229FBA522941E68100FA0858 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "objective-c runtime";
+			productName = "objective-c runtime";
+			productReference = 229FBA542941E68100FA0858 /* objective-c runtime */;
+			productType = "com.apple.product-type.tool";
+		};
 		22A178E429125638009F9B2B /* Explore MacOS Developer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22A178EC29125638009F9B2B /* Build configuration list for PBXNativeTarget "Explore MacOS Developer" */;
@@ -386,6 +432,9 @@
 					229FBA48293F2A3A00FA0858 = {
 						CreatedOnToolsVersion = 14.1;
 					};
+					229FBA532941E68100FA0858 = {
+						CreatedOnToolsVersion = 14.1;
+					};
 					22A178E429125638009F9B2B = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
@@ -417,6 +466,7 @@
 				228D4547292482B9005ED0D3 /* webview-OC与JS通讯 */,
 				228D45582929B840005ED0D3 /* 设置App的delegate */,
 				229FBA48293F2A3A00FA0858 /* 打开webview的Inspect */,
+				229FBA532941E68100FA0858 /* objective-c runtime */,
 			);
 		};
 /* End PBXProject section */
@@ -452,6 +502,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				229FBA4C293F2A3A00FA0858 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		229FBA502941E68100FA0858 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				229FBA572941E68100FA0858 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,6 +604,24 @@
 			name = Debug;
 		};
 		229FBA4E293F2A3A00FA0858 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		229FBA582941E68100FA0858 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		229FBA592941E68100FA0858 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -752,6 +828,15 @@
 			buildConfigurations = (
 				229FBA4D293F2A3A00FA0858 /* Debug */,
 				229FBA4E293F2A3A00FA0858 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		229FBA5A2941E68100FA0858 /* Build configuration list for PBXNativeTarget "objective-c runtime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				229FBA582941E68100FA0858 /* Debug */,
+				229FBA592941E68100FA0858 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

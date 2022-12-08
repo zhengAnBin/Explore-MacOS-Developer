@@ -16,6 +16,7 @@
 @implementation MyNSApplicationDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+    
     NSLog(@"应用程序完成启动");
 }
 
